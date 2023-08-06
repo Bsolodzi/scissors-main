@@ -35,8 +35,9 @@ db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-load_dotenv()
-# print(os.getenv('API_KEY'))
+# load_dotenv()
+# # print(os.getenv('API_KEY'))
+# API_KEY = os.getenv("API_KEY")
 
 @app.before_first_request
 def create_tables():
