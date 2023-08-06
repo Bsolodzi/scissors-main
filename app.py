@@ -108,7 +108,6 @@ def create_account():
     return render_template('signup.html')
 
 # to login an already existing user
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 
