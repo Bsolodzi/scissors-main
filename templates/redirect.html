@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="3;url={{ link }}" />
+    <script>
+      function getIpAddress() {
+        return fetch('https://api.ipify.org?format=json')
+          .then((response) => response.json())
+          .then((data) => data.ip)
+          .catch((error) => {
+            console.error('Error getting IP address:', error);
+            return null;
+          });
+      }
+
+      function sendIpAddress(ipAddress) {
+        fetch(`/${window.location.pathname}`, {
+          method: 'GET',
+          headers: {
+            'X-Forwarded-For': ipAddress
+          }
+        })
+          .then((response) => {
+            // Handle the response from your server if needed
+            console.log('IP address sent to the server');
+          })
+          .catch((error) => {
+            // Handle any errors that occur during the request
+            console.error('Error sending IP address to the server:', error);
+          });
+      }
+
+      getIpAddress().then((ipAddress) => {
+        if (ipAddress) {
+          sendIpAddress(ipAddress);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+    <p>
+      You will be redirected to the original URL shortly. If you are not
+      redirected, please <a href="{{ link }}">click here</a>.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1 class="headings">Welcome!!!</h1>
+
+{% if current_user.is_authenticated %}
+<div class="form-group">
+  <h1 class="headings">
+    Hey {{current_user.username}}! You've been logged in.
+  </h1>
+  <hr />
+  <h2 class="headings">Want to Manipulate a link?</h2>
+  <hr />
+  <form action="{{url_for('home')}}" method="POST">
+    <div class="form-group">
+      <label for="link">Long Link:</label>
+      <input
+      class="form-control"
+        type="text"
+        id="link"
+        name="link"
+        placeholder="Please paste your long link here"
+        
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="custom_link">Custom Back-Half (Optional)</label>
+      <input id ="custom_link" type="text" name="custom_link" class="form-control" placeholder="Type your custom link here">
+    </div>
+
+    <div class="form-group">
+      <input type="submit" value="Shorten link" class="mybtn" />
+    </div>
+  </form>
+</div>
+{% endif %} {% for link in links %}
+<div class="blogs">
+  <article class="index-article">
+    <div class="form-group">
+      <div>
+        <h2>{{link.long_link}}</h2>
+      </div>
+      <div>
+        <h3>Short Link: {{link.short_link}}</h3>
+        
+      </div>
+      <div>
+        <h3>By {{link.user_id}}</h3>
+      </div>
+    </div>
+    <div>
+      <a href="/details/{{link.id}}/" class="mybtn"> View</a>
+    </div>
+  </article>
+</div>
+{% endfor %} {% endblock content %}

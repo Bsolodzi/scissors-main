@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% block content %} 
+
+<p>Long Link : {{ link.long_link }} </p>
+<p>Short Link: {{ link.short_link }}</p>
+
+<form id="delete-form" method="POST">
+  <input type="hidden" name="_method" value="DELETE" />
+  <button type="button" class="mybtn" onclick="deleteLink()">Delete</button>
+
+  <div>
+    <button id="generate-qrcode-btn" class="mybtn" type="button">Generate QR code</button>
+  </div>
+
+  <div>
+    <a href="{{url_for('analytics', short_link=link.short_link)}}">
+    <button id="analytics" class="mybtn" type="button">Check analytics</button></a>
+    
+  </div>
+
+</form>
+
+<div id="qrcode-container"></div>
+
+<script>
+  function deleteLink() {
+    if (confirm('Are you sure you want to delete this link?')) {
+      document.getElementById('delete-form').submit();
+    }
+  }
+</script>
+<script>
+  document
+    .getElementById('generate-qrcode-btn')
+    .addEventListener('click', function () {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', '/detail/{{link.id}}/qr_code', true);
+      xhr.responseType = 'arraybuffer';
+      xhr.onload = function () {
+        if (xhr.status === 200) {
+          var qrCodeBlob = new Blob([xhr.response], { type: 'image/png' });
+          var qrCodeURL = URL.createObjectURL(qrCodeBlob);
+          var qrCodeImg = document.createElement('img');
+          qrCodeImg.src = qrCodeURL;
+          document.getElementById('qrcode-container').innerHTML = '';
+          document.getElementById('qrcode-container').appendChild(qrCodeImg);
+        } else {
+          alert('Failed to generate QR code');
+        }
+      };
+      xhr.send();
+    });
+</script>
+
+{% endblock %}
