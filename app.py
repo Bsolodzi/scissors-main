@@ -151,8 +151,6 @@ def get_location(ip_address: str):
     
     return location
 
-    
-
 # assignment
 @app.route('/<short_link>')
 @cache.cached(timeout=30)
