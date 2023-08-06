@@ -34,7 +34,7 @@ rich
 SQLAlchemy
 tomli
 typing_extensions
-urllib3==2.0.3
-validators==0.20.0
-Werkzeug==2.2.3
-wrapt==1.15.0
+urllib3
+validators
+Werkzeug
+wrapt
