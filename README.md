@@ -13,7 +13,7 @@
 </div>
 <div>
   <p align="center">
-    <a href="https://github.com//bsolodzi/scissorsss/readme.md"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com//bsolodzi/scissorsss/README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://bensolo.pythonanywhere.com/">Live Site</a>
@@ -75,7 +75,7 @@ This tool was built as a capstone project by <a href="https://www.github.com//bs
 
 Live Site: [bensolo.pythonanywhere.com](https://bensolo.pythonanywhere.com)
 
-Full Documentation: [Scissors Documentation](https://github.com//bsolodzi/scissorsss/readme.md)
+Full Documentation: [Scissors Documentation](https://github.com//bsolodzi/scissorsss/README.md)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -193,7 +193,7 @@ Live Site: [sciz.site](https://www.sciz.site)
 
 Project Link: [Scissor Repo](https://github.com//bsolodzi/scissorsss)
 
-Documentation: [Scissor Wiki](https://github.com//bsolodzi/scissorsss/readme.md)
+Documentation: [Scissor Wiki](https://github.com//bsolodzi/scissorsss/README.md)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
