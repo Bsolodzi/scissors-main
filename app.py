@@ -171,7 +171,6 @@ def redirect_link(short_link):
 
 # def get_short_link()
 @app.route('/', methods=['GET', 'POST'])
-@login_required
 @cache.cached(timeout=20)
 # @limiter.limit("1/second")
 def home():
