@@ -24,12 +24,12 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = '4d4c18d8d33c8c704705'
 app.config['CACHE_TYPE'] = 'simple'
 cache = Cache(app)
-limiter = Limiter(
-    get_remote_address,
-    app=app,
-    default_limits=["200 per day", "50 per hour"]
-   
-)
+# limiter = Limiter(
+#     get_remote_address,
+#     app=app,
+#     default_limits=["200 per day", "50 per hour"]
+#     # storage_uri="memory://",
+# )
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
@@ -235,7 +235,7 @@ def generate_qr_code_link(id: int):
 
 @app.route('/<short_link>/edit', methods=['GET', 'POST'])
 @login_required
-@limiter.limit('10/minutes')
+# @limiter.limit('10/minutes')
 def update_link(short_link):
     link = Link.query.filter_by(user_id=current_user.id).filter_by(short_link=short_link).first()
     host = request.host_url
