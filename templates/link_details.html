@@ -2,9 +2,9 @@
 {% block content %} 
 
 <p>Long Link : {{ link.long_link }} </p>
-<a href="{{host}}{{link.short_link}}" target="_blank"
+<p><a href="{{host}}{{link.short_link}}" target="_blank"
           >{{host}}{{link.short_link}}</a
-        >
+        ></p>p
 <!-- <p>Short Link: {{ link.short_link }}</p> -->
 
 <form id="delete-form" method="POST">
