@@ -120,7 +120,7 @@ This tool can be accessed via the deployed site or a local copy of the project.
 
 ### Live Link
 
-Deployed site: [bensolo.pythonanywhere.com](https://bensolo.pythonanywhere.com) - hosted via [render](https://www.pythonanywhere.com) 
+Deployed site: [bensolo.pythonanywhere.com](https://bensolo.pythonanywhere.com) - hosted via [PythonAnywhere](https://www.pythonanywhere.com) 
 
 ### Localhost
 
