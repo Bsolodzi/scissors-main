@@ -2,14 +2,14 @@
 {% block content %} {% if link %}
 
 <p>Long Link : {{ link.long_link }} </p>
-<p>
+<!-- <p>
           Shortened Link: <br />
         <a href="{{host}}{{link.short_link}}" target="_blank"
           >{{host}}{{link.short_link}}</a
         >{{host}}
-</p>
+</p> -->
 
-<!-- <p>Short Link: {{ link.short_link }}</p> -->
+<p>Short Link : {{host}}{{ link.short_link }}</p>
 
 <form id="delete-form" method="POST">
   <input type="hidden" name="_method" value="DELETE" />
