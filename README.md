@@ -11,29 +11,18 @@
   [![MIT License][license-shield]][license-url]
   [![Twitter][twitter-shield]][twitter-url]
 </div>
-
-<!-- Project Logo -->
-<br />
-<div align="center">
-  <a href="https://sciz.site">
-    <img src="website/static/scissor-logo/default.png" alt="Logo" width="90%" height="30%">
-  </a>
-</div>
-
-<br />
-
 <div>
   <p align="center">
-    <a href="https://github.com/Ze-Austin/scissor/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com//bsolodzi/scissorsss/readme.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://sciz.site">Live Site</a>
+    <a href="https://bensolo.pythonanywhere.com/">Live Site</a>
     ·
     <a href="#sample">View Demo</a>
     ·
-    <a href="https://github.com/Ze-Austin/scissor/issues">Report Bug</a>
+    <a href="https://github.com//bsolodzi/scissorsss/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Ze-Austin/scissor/issues">Request Feature</a>
+    <a href="https://github.com//bsolodzi/scissorsss/issues">Request Feature</a>
   </p>
 </div>
 
@@ -44,7 +33,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-scissor">About Scissor</a>
+      <a href="#about-scissor">About Scissors</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -76,17 +65,17 @@
 ---
 
 <!-- About the Tool -->
-## About Scissor
+## About Scissors
 
-Scissor is a simple tool which makes URLs as short as possible, as "brief is the new black" in the age of social media.
+Scissors is a simple tool which makes URLs as short as possible, as "brief is the new black" in the age of social media.
 
-Scissor converts long URLs into easily sharable QR codes and short, customizable links.
+Scissors converts long URLs into easily sharable QR codes and short, customizable links.
 
-This tool was built as a capstone project by <a href="https://www.github.com/Ze-Austin">Ze Austin</a>, a Backend Engineering student at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a> who's learning to create magic with Python.
+This tool was built as a capstone project by <a href="https://www.github.com//bsolodzi">Bernard Kwame Solodzi</a>, a Backend Engineering student at <a href="https://altschoolafrica.com/schools/engineering">AltSchool Africa</a> who's learning to create magic with Python.
 
-Live Site: [sciz.site](https://www.sciz.site)
+Live Site: [bensolo.pythonanywhere.com](https://bensolo.pythonanywhere.com)
 
-Full Documentation: [Scissor Wiki](https://github.com/Ze-Austin/scissor/wiki)
+Full Documentation: [Scissors Documentation](https://github.com//bsolodzi/scissorsss/readme.md)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
@@ -131,7 +120,7 @@ This tool can be accessed via the deployed site or a local copy of the project.
 
 ### Live Link
 
-Deployed site: [sciz.site](https://www.sciz.site) - hosted via [render](https://www.render.com) 
+Deployed site: [bensolo.pythonanywhere.com](https://bensolo.pythonanywhere.com) - hosted via [render](https://www.pythonanywhere.com) 
 
 ### Localhost
 
