@@ -152,29 +152,6 @@ Python3: [Get Python](https://www.python.org/downloads/)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
----
-
-<!-- Sample Screenshot -->
-## Sample
-
-<br />
-
-[![Scissor Screenshot][scissor-screenshot]](https://github.com/Ze-Austin/scissor/blob/main/website/static/screenshots/scissor-home.png)
-
-<br/>
-
----
-
-<br/>
-
-[![Dashboard Screenshot][dashboard-screenshot]](https://github.com/Ze-Austin/scissor/blob/main/website/static/screenshots/scissor-dashboard.png)
-
-<br/>
-
-<p align="right"><a href="#readme-top">back to top</a></p>
-
----
-
 <!-- License -->
 ## License
 
@@ -187,13 +164,13 @@ Distributed under the MIT License. See <a href="https://github.com//bsolodzi/sci
 <!-- Contact -->
 ## Contact
 
-Dr Austin Wopara - [@Ze_Austin](https://twitter.com/boss_assignment) - bsolodzi@gmail.com
+Bernard Kwame Solodzi - [@boss_assignment](https://twitter.com/boss_assignment) - bsolodzi@gmail.com
 
-Live Site: [sciz.site](https://www.sciz.site)
+Live Site: [bensolo.pythonanywhere.com](https://bensoo.pythonanywhere.com/)
 
-Project Link: [Scissor Repo](https://github.com//bsolodzi/scissorsss)
+Project Link: [Scissor Repository](https://github.com//bsolodzi/scissorsss)
 
-Documentation: [Scissor Wiki](https://github.com//bsolodzi/scissorsss/blob/main/README.md)
+Documentation: [Scissor Documentation](https://github.com//bsolodzi/scissorsss/blob/main/README.md)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
