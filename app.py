@@ -24,19 +24,19 @@ app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 app.config["SECRET_KEY"] = '4d4c18d8d33c8c704705'
 app.config['CACHE_TYPE'] = 'simple'
 cache = Cache(app)
-# limiter = Limiter(
-#     get_remote_address,
-#     app=app,
-#     default_limits=["200 per day", "50 per hour"]
-#     #storage_uri="memory://",
-# )
+limiter = Limiter(
+    get_remote_address,
+    app=app,
+    default_limits=["200 per day", "50 per hour"]
+    storage_uri="memory://",
+)
 db = SQLAlchemy(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 
-# load_dotenv()
-# # print(os.getenv('API_KEY'))
-# API_KEY = os.getenv("API_KEY")
+load_dotenv()
+print(os.getenv('API_KEY'))
+API_KEY = os.getenv("API_KEY")
 
 @app.before_first_request
 def create_tables():
@@ -171,9 +171,9 @@ def redirect_link(short_link):
 
 # def get_short_link()
 @app.route('/', methods=['GET', 'POST'])
-# @login_required
-# @cache.cached(timeout=20)
-# @limiter.limit("1/second")
+@login_required
+@cache.cached(timeout=20)
+@limiter.limit("1/second")
 def home():
     latest_link = None  # Initialize the variable
 
