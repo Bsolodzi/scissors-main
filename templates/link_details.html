@@ -51,12 +51,13 @@
           qrCodeImg.src = qrCodeURL;
           document.getElementById('qrcode-container').innerHTML = '';
           document.getElementById('qrcode-container').appendChild(qrCodeImg);
-        } else {
+        } 
+        else {
           alert('Failed to generate QR code');
         }
       };
       xhr.send();
-    });
+  });
 </script>
 {% endif %}
 {% endblock %}
