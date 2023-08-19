@@ -8,7 +8,7 @@
   [![Forks][forks-shield]][forks-url]
   [![Stargazers][stars-shield]][stars-url]
   [![Issues][issues-shield]][issues-url]
-  [![MIT License][license-shield]][[license-url](https://github.com/Bsolodzi/scissorsss/blob/main/LICENSE)]
+  [![MIT License][license-shield]][license-url]
   [![Twitter][twitter-shield]][twitter-url]
 </div>
 <div>
