@@ -202,10 +202,9 @@ This project was made possible by:
 [issues-shield]: https://img.shields.io/github/issues//bsolodzi/scissorsss.svg?style=for-the-badge
 [issues-url]: https://github.com/bsolodzi/scissorsss/issues
 [license-shield]: https://img.shields.io/github/license//bsolodzi/scissorsss.svg?style=for-the-badge
-[license-url]: https://github.com//bsolodzi/scissorsss/blob/main/LICENSE.txt
+[license-url]: https://github.com//bsolodzi/scissorsss/blob/main/LICENSE
 [twitter-shield]: https://img.shields.io/badge/-@boss_assignment-1ca0f1?style=for-the-badge&logo=twitter&logoColor=white&link=https://twitter.com/boss_assignment
 [twitter-url]: https://twitter.com/boss_assignment
-[scissor-screenshot]: website/static/screenshots/scissor-home.png
 [python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
 [jinja]: https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black
